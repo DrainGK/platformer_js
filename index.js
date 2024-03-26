@@ -15,7 +15,9 @@ const backgroundLevel1 = new Sprite({
   imageSrc: "./assets/img/backgroundLevel1.png",
 });
 
-const player = new Player();
+const player = new Player({
+  collisionBlocks, //equal (JS feature with same name) to collisionBlocks(paremeter): collisionsBlocks(blocks from the utils.js method)
+});
 const keys = {
   w: {
     pressed: false,
